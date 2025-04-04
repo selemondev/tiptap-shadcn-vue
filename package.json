@@ -14,7 +14,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "bumpp": "bumpp package.json",
-    "release": "pnpm build && pnpm publish --no-git-checks --access public",
+    "release": "pnpm bumpp && pnpm build && pnpm publish --no-git-checks --access public",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
