@@ -2,6 +2,8 @@
 
 This library aims to be a powerful and flexible editor within the Vue ecosystem, combining Tiptap with ShadCN for a seamless experience. ✨
 
+🌐 **Demo:** [https://tiptap-shadcn-vue.pages.dev](https://tiptap-shadcn-vue.pages.dev)
+
 👉 While it's not my main priority, I will provide active support.
 👥 If you'd like to contribute, I can invite you to the project.
 💡 Have an idea? Open an issue, and let's discuss!
