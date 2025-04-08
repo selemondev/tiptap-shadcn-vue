@@ -1,20 +1,77 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+name: "✨ Feature Request"
+description: Suggest an idea or enhancement for this project
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to share your ideas! We appreciate your contribution to making our project better.
+        
+  - type: dropdown
+    id: feature_type
+    attributes:
+      label: Type of feature
+      description: What kind of feature are you proposing?
+      options:
+        - New functionality
+        - Enhancement to existing feature
+        - User experience improvement
+        - Performance improvement
+        - Other (please describe below)
+    validations:
+      required: true
+      
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your feature request related to a problem?
+      description: Please describe what problem you're trying to solve
+      placeholder: I'm always frustrated when [...]
+    validations:
+      required: false
+      
+  - type: textarea
+    id: solution
+    attributes:
+      label: Desired solution
+      description: Describe what you want to happen
+      placeholder: It would be great if the component could...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any alternative solutions or features you've considered
+      placeholder: I thought about implementing it by...
+    validations:
+      required: false
+      
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples from other projects
+      description: Are there other projects that have something similar to what you're requesting?
+      placeholder: This feature exists in [project link] and works by...
+    validations:
+      required: false
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context, mockups, or screenshots about the feature request here
+      placeholder: You can paste images directly here!
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Before submitting
+      options:
+        - label: I've searched for existing feature requests and this hasn't been suggested before
+          required: true
+        - label: I'm willing to help implement or test this feature if needed
+          required: false
