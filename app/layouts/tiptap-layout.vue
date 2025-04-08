@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TiptapProvider, TiptapTreeStructure } from '~/components/tiptap-editor/tiptap'
+import { TiptapProvider, TiptapTreeStructure } from '~/components/ui/tiptap'
 import {
   Sidebar,
   SidebarContent,
