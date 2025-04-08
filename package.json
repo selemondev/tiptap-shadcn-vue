@@ -1,7 +1,7 @@
 {
   "name": "tiptap-shadcn-vue",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": false,
   "packageManager": "pnpm@10.7.1",
   "description": "Shadcn + Tiptap component for Vue 3",
@@ -22,6 +22,7 @@
     "generate:release:minor": "npx changelogen@latest --minor --push",
     "generate:release:patch": "npx changelogen@latest --patch --push",
     "publish:package": "pnpm build && pnpm publish --no-git-checks --access public",
+    "unpublish:package": "npm unpublish",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
