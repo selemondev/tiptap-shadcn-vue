@@ -10,6 +10,9 @@ import { compileScript, parse } from 'vue/compiler-sfc'
 const DEPENDENCIES = new Map<string, string[]>([
   ['reka-ui', []],
   ['@vueuse/core', []],
+  ['@atlaskit/pragmatic-drag-and-drop', []],
+  ['@atlaskit/pragmatic-drag-and-drop-hitbox', []],
+  ['@iconify/vue', []],
 ])
 
 const REGISTRY_URL = 'https://tiptap-shadcn-vue.pages.dev/r'
