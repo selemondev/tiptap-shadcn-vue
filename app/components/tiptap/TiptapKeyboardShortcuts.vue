@@ -1,24 +1,11 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue'
 import { cn } from '@/lib/utils'
+import { shortcuts } from './tiptapTreeUtils'
 
 const props = defineProps<{
   class?: HTMLAttributes['class']
 }>()
-
-const shortcuts = [
-  { keys: ['Ctrl', 'B'], description: 'Bold' },
-  { keys: ['Ctrl', 'I'], description: 'Italic' },
-  { keys: ['Ctrl', 'U'], description: 'Underline' },
-  { keys: ['Ctrl', '`'], description: 'Code' },
-  { keys: ['Ctrl', 'Alt', '1-6'], description: 'Heading 1-6' },
-  { keys: ['Ctrl', 'Shift', '8'], description: 'Bullet list' },
-  { keys: ['Ctrl', 'Shift', '9'], description: 'Ordered list' },
-  { keys: ['Tab'], description: 'Indent' },
-  { keys: ['Shift', 'Tab'], description: 'Outdent' },
-  { keys: ['Ctrl', 'Z'], description: 'Undo' },
-  { keys: ['Ctrl', 'Y'], description: 'Redo' },
-]
 </script>
 
 <template>
