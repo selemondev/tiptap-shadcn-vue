@@ -6,7 +6,9 @@
   "packageManager": "pnpm@10.7.1",
   "description": "Shadcn + Tiptap component for Vue 3",
   "license": "MIT",
-  "files": [],
+  "files": [
+    "tiptap.json"
+  ],
   "scripts": {
     "build": "pnpm build:registry && nuxt build",
     "build:registry": "tsx ./scripts/build-registry.ts",
