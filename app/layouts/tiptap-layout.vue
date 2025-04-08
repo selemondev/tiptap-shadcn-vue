@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { shortcuts, TiptapProvider, TiptapTreeStructure } from '@/components/tiptap'
+import { TiptapProvider, TiptapTreeStructure } from '@/components/tiptap'
 import {
   Sidebar,
   SidebarContent,
